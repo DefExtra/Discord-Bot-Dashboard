@@ -1,0 +1,13 @@
+doctype html
+include includes/axios.pug
+head
+  include includes/header.pug
+  title #{client.user.username}
+bady
+  .toto(align="center")
+    img(align="center" src="https://c.tenor.com/NVfPIwDhmRYAAAAi/ta-da-glowing-star.gif" alt="asola" width="420" height="420")
+    br
+    br
+    br
+    h2 Thanks for your login!.
+    button.btn.btn-warning(type='button' onclick="location.href='/dashboard'") Continue

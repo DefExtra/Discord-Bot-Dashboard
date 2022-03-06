@@ -1,0 +1,25 @@
+doctype html
+include includes/axios.pug
+head
+  include includes/header.pug
+  title #{client.user.username}
+bady
+  .container.mt-5.top-ass
+    .row.cont
+      .col
+        p.par1 Place an professional artistic touch of music on your server ✨.
+        p.col-cus
+          | the best qullity of music listening is here!
+          br
+          |                         Ready to boost your discord server with us?
+        a(href='/invite' target='_blank')
+          button.btn.btn-invite(type='button') Invite to Discord
+        - if (user && user.id) {
+          a(href='/dashboard')
+            button.btn.btn-outline-prem(type='button') Dashboard
+        - } else {
+          a(href='/login')
+            button.btn.btn-outline-prem(type='button') Login
+        - }
+      .col
+        img.float-end.logo-main.rounded-circle(src=client.user.displayAvatarURL({ dynamic: true }) alt='Logo-bot')

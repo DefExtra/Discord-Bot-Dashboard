@@ -1,0 +1,33 @@
+{
+  "name": "discord-bot-website-by-def",
+  "version": "0.0.1",
+  "description": "A simple dashboard for your discord bot.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "pug": "^3.0.2",
+    "memorystore": "^1.6.6",
+    "express-session": "^1.17.2",
+    "passport": "^0.5.2",
+    "passport-discord": "^0.1.4",
+    "body-parser": "^1.19.2",
+    "path": "^0.12.7",
+    "quick.db": "^7.1.3",
+    "discord.js": "^13.6.0"
+  },
+  "engines": {
+    "node": "16.x"
+  },
+  "repository": {
+    "url": "https://glitch.com/edit/#!/discord-bot-website-by-def"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "glitch",
+    "express"
+  ]
+}
